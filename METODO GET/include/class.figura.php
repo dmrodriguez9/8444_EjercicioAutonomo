@@ -9,18 +9,11 @@
 		private $perimetro; //perimetro
 
 
-		//Constructores
-
-		/*function __construct($tipo) {
-			$this->tipo=$tipo;
-		}*/
-
-
 		//Metodos
 
 		public static function get_form(){
 			$html = '
-			<form class="form" name="figuras" method="post" action="index.php" >
+			<form class="form" name="figuras" method="get" action="index.php" >
 			<table align="center" class="table table-warning table-striped">
 				<tr>
 					<th colspan="2" class="text-center">INGRESO DATOS DE LA FIGURA</th><br>
@@ -59,7 +52,6 @@
 			return $html;
 		}
 
-
 		/*public static function get_formFiguras(){
 			$html = '
 			<form name="figuras" method="post" action="figuras/class.cuadrado.php" >
@@ -96,6 +88,7 @@
 	    
 	    public abstract function GetTipo();
 	}
+	
 ?>
 
 

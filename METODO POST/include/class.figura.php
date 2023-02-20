@@ -20,7 +20,7 @@
 
 		public static function get_form(){
 			$html = '
-			<form class="form" name="figuras" method="post" action="index.php" >
+			<form class="form" name="figuras" method="post" action="" >
 			<table align="center" class="table table-warning table-striped">
 				<tr>
 					<th colspan="2" class="text-center">INGRESO DATOS DE LA FIGURA</th><br>

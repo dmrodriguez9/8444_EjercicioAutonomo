@@ -30,25 +30,44 @@
 
 		//Mostrando el area y el perimetro segun la figura seleccionada
 		
-		if(isset($_POST["tipo"])){
-			$figuraElegida=$_POST["tipo"];
+		if(isset($_GET["tipo"])){
+			$figuraElegida=$_GET["tipo"];
 			//echo $figuraElegida;
 			if($figuraElegida=="cuadrado"){
 				$objCuadrado = new cuadrado();
+				$tipo=$objCuadrado->GetTipo();
 				$area=$objCuadrado->GetArea();
 				$perimetro=$objCuadrado->GetPerimetro();
+			
 			}else if($figuraElegida=="rectangulo"){
 			    $objRectangulo = new rectangulo();
+				$tipo=$objRectangulo->GetTipo();
 				$area=$objRectangulo->GetArea();
 				$perimetro=$objRectangulo->GetPerimetro();
 			}else if($figuraElegida=="triangulo"){
 				$objTriangulo = new triangulo();
+				$tipo=$objTriangulo->GetTipo();
 				$area=$objTriangulo->GetArea();
 				$perimetro=$objTriangulo->GetPerimetro();
 			}
+			
+			echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>'; 
 			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
-		    echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>'; 
+			echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';
+
+			$opcion=$_GET["tipo"];
+			$POST=urlencode(serialize($_GET));
+			header("location:index.php?post=$POST&d=$opcion");
+			//var_dump($p);
+		
+	
+		
+			
 		}
+
+			
+		
+
         
 	?>
 	   
