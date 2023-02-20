@@ -35,19 +35,25 @@
 			//echo $figuraElegida;
 			if($figuraElegida=="cuadrado"){
 				$objCuadrado = new cuadrado();
+				$tipo=$objCuadrado->GetTipo();
 				$area=$objCuadrado->GetArea();
 				$perimetro=$objCuadrado->GetPerimetro();
 			}else if($figuraElegida=="rectangulo"){
 			    $objRectangulo = new rectangulo();
+				$tipo=$objRectangulo->GetTipo();
 				$area=$objRectangulo->GetArea();
 				$perimetro=$objRectangulo->GetPerimetro();
 			}else if($figuraElegida=="triangulo"){
 				$objTriangulo = new triangulo();
+				$tipo=$objTriangulo->GetTipo();
 				$area=$objTriangulo->GetArea();
 				$perimetro=$objTriangulo->GetPerimetro();
 			}
-			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
-		    echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>'; 
+			echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
+			echo '<p class="text-center">El área es: ' . $area . '</p>';
+		    echo '<p class="text-center">El perímetro es: ' . $perimetro . '</p>';
+			//echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
+		    //echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>'; 
 		}
         
 	?>

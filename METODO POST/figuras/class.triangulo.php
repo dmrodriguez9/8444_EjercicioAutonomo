@@ -40,17 +40,26 @@ class triangulo extends figura implements formulas{
          
          
      public function GetTipo(){
-        
+         $figuraTriangulo=$_POST["tipo"];
+         return $figuraTriangulo;
      }
  
  
      //Interface
  
      public function area(){
+         $lado_1=$_POST["lado_1"];
+         $lado_2=$_POST["lado_2"];
+         $base=$lado_1;
+         $altura=$lado_2;
+         return ($base*$altura)/2;
  
      }
      public function perimetro(){
- 
+         $lado_1=$_POST["lado_1"];
+         $lado_2=$_POST["lado_2"];
+         $lado_3=$_POST["lado_3"];
+         return $lado_1+$lado_2+$lado_3;
      }
  
 	
