@@ -31,15 +31,15 @@
 				</tr>
 				<tr>
 					<td>Lado 1:</td>
-					<td><input type="text" id="lado_1" name="lado_1"size="4" disabled class="form-control"></td>
+					<td><input type="text" id="lado_1" name="lado_1"size="4" readOnly class="form-control"></td>
 				</tr>
 				<tr>
 					<td>Lado 2:</td>
-					<td><input type="text" id="lado_2" name="lado_2"size="4" disabled class="form-control"></td>
+					<td><input type="text" id="lado_2" name="lado_2"size="4" readOnly class="form-control"></td>
 				</tr>
 				<tr>
 					<td>Lado 3:</td>
-					<td><input type="text" id="lado_3" name="lado_3"size="4" disabled class="form-control"></td>
+					<td><input type="text" id="lado_3" name="lado_3"size="4" readOnly class="form-control"></td>
 				</tr>
 								
 					<tr class="text-center">

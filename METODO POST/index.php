@@ -49,11 +49,30 @@
 				$area=$objTriangulo->GetArea();
 				$perimetro=$objTriangulo->GetPerimetro();
 			}
-			echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
+
+			echo '<form class="form" name="figuras" method="post" action="procesa.php" >
+				<table align="center" class="table table-warning table-striped">
+					<tr>
+						<td>Tipo de figura:</td>
+						<td><p name="tipo" > '. $tipo . '</p></td>
+					</tr>
+					<tr>
+						<td>Área:</td>
+						<td><p name="area" > '. $area . '</p></td>
+					</tr>
+					<tr>
+						<td>Perímetro:</td>
+						<td><p name="area" > '. $perimetro . '</p></td>
+					</tr>
+				</table>
+				</form>';
+
+
+			/*echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
 			echo '<p class="text-center">El área es: ' . $area . '</p>';
 		    echo '<p class="text-center">El perímetro es: ' . $perimetro . '</p>';
-			//echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
-		    //echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>'; 
+			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
+		    echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';*/ 
 		}
 
         

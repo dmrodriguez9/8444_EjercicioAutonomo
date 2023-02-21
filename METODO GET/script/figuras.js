@@ -14,23 +14,22 @@ function figuraSeleccionada(){
 
     var figura = document.getElementById("tipo");
     //var lado1;
-    var figura=document.getElementById("tipo");
     //var tipoFigura=figura.value;
     //console.log(figura.value);
 
     if(figura.value=="cuadrado"){
-       document.getElementById("lado_1").disabled=false;
-       document.getElementById("lado_2").disabled=true;
-        document.getElementById("lado_3").disabled=true;
+       document.getElementById("lado_1").readOnly=false;
+       document.getElementById("lado_2").readOnly=true;
+        document.getElementById("lado_3").readOnly=true;
     }else if(figura.value=="rectangulo"){
-        document.getElementById("lado_1").disabled=false;
-        document.getElementById("lado_2").disabled=false;
-        document.getElementById("lado_3").disabled=true;
+        document.getElementById("lado_1").readOnly=false;
+        document.getElementById("lado_2").readOnly=false;
+        document.getElementById("lado_3").readOnly=true;
     }else{
-        document.getElementById("lado_1").disabled=false;
-        document.getElementById("lado_2").disabled=false;
-        document.getElementById("lado_3").disabled=false;
+        document.getElementById("lado_1").readOnly=false;
+        document.getElementById("lado_2").readOnly=false;
+        document.getElementById("lado_3").readOnly=false;
     }
 
-    
+    /*https://codigoroot.net/blog/3-formas-de-deshabilitar-inputs-html-rapido-y-sencillo-con-javascript-y-atributos-html/*/
 }
