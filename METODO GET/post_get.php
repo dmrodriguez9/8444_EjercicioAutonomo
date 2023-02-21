@@ -4,6 +4,21 @@
 
 //*******************************************************************
 function show_data($post){
+
+    if(isset($_GET["lado_1"])){
+        $lado1=$_GET["lado_1"];
+       
+     }
+     if(isset($_GET["lado_2"])){
+        $lado2=$_GET["lado_2"];
+       
+     }
+     if(isset($_GET["lado_3"])){
+        $lado3=$_GET["lado_3"];
+      
+     }
+
+     
 	$html = '
 	<table align="center" class="table table-warning table-striped">
 		<tr>
@@ -29,6 +44,7 @@ function show_data($post){
 			<th colspan="2"><a href="index.php"> Regresar</a></th>
 		</tr>		
 	</table>';
+   
 	
 	return $html;
 }
@@ -68,9 +84,21 @@ echo "</pre>";
     }
     
     echo show_data($post);
+
+
+
  //   echo "<br> <br>";
  //   echo "<a href='index.html'> Regresar</a>";
+
+ /*if(isset($_POST["enviar"])){
+    $perimetro=$_POST["perimetro"];
+    echo $perimetro;
+ }*/
 ?>
+
+<!--<form action="post_get.php" method="post">
+    <p name="traerPerimetro" value="<?php echo $perimetro?>"></p>
+</form>-->
 
 <!--BOOSTRAP-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">

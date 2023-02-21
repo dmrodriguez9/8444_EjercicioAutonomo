@@ -45,7 +45,6 @@
 					<tr class="text-center">
 						<th colspan="2"><input type="submit" name="calcular" value="Calcular" class="btn btn-outline-warning"></th>
 					</tr>
-			
 				
 			</table>
 			</form>';
@@ -54,7 +53,7 @@
 
 		/*public static function get_formFiguras(){
 			$html = '
-			<form name="figuras" method="post" action="figuras/class.cuadrado.php" >
+			<form name="figuras" method="post" action="post_get.php" >
 			<table align="center" class="table table-warning table-striped">
 				<tr>
 					<th colspan="2" class="text-center">INGRESO DATOS DE LA FIGURA</th><br>
