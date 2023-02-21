@@ -55,6 +55,7 @@
 			//echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
 		    //echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>'; 
 		}
+
         
 	?>
 	   

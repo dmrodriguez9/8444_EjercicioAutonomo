@@ -54,21 +54,19 @@
 			echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>'; 
 			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
 			echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';
-
-			$opcion=$_GET["tipo"];
-			$POST=urlencode(serialize($_GET));
-			header("location:index.php?post=$POST&d=$opcion");
-			//var_dump($p);
+           
+		}
+		
+		    if(isset($_GET["tipo"])){
+				$opcion=$_GET["tipo"];
+				$p=urlencode(serialize($_GET));
+			     //var_dump($p);
+				header("location:post_get.php?post=$p&d=$opcion");
+			}
 		
 	
-		
-			
-		}
-
-			
-		
-
-        
+					
+					
 	?>
 	   
 	

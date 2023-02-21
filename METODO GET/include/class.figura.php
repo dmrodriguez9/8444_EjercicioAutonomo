@@ -88,7 +88,9 @@
 	    
 	    public abstract function GetTipo();
 	}
+	//
 	
+	 
 ?>
 
 
