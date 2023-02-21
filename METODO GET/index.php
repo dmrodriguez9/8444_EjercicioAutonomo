@@ -66,9 +66,6 @@
 						<td>Perímetro:</td>
 						<td><p name="area" > '. $perimetro . '</p></td>
 					</tr>
-					<tr class="text-center">
-						<th colspan="2"><input type="submit" name="enviar" value="Enviar" class="btn btn-outline-warning"></th>
-					</tr>
 				</table>
 				</form>';
 			
