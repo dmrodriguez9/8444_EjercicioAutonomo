@@ -50,6 +50,8 @@
 				$perimetro=$objTriangulo->GetPerimetro();
 			}
 
+			//Impresion de area y perimetro
+
 			echo '<form class="form" name="figuras" method="post" action="procesa.php" >
 				<table align="center" class="table table-warning table-striped">
 					<tr>
