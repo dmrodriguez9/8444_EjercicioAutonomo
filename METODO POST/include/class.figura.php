@@ -17,7 +17,7 @@
 			<br><h2 class="text-center">Aplicación de Tecnologías Web</h2><br>
 			<h4 class="text-center">Nombre: Rodríguez Danny</h4>
 			<hr>
-			<form class="form" name="figuras" method="post" action="" >
+			<form class="form" name="figuras" method="post" action="index.php" >
 			<table align="center" class="table table-warning table-striped">
 				<tr>
 					<th colspan="2" class="text-center">INGRESO DATOS DE LA FIGURA</th><br>
