@@ -41,6 +41,10 @@ function show_data($post){
 			<td>Lado 3: </td>
 			<td>' . $post['lado_3'] . '</td>
 		</tr>
+		<tr>
+			<td>Altura: </td>
+			<td>' . $post['altura'] . '</td>
+		</tr>
 		<tr class="text-center">
 			<th colspan="2"><a href="index.php"> Regresar</a></th>
 		</tr>		
