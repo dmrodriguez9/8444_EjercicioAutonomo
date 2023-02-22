@@ -14,11 +14,6 @@
 
 	<?php
 		
-		//$objCuadrado = new cuadrado();
-		//$objRectangulo = new rectangulo();
-		//$objTriangulo = new triangulo();
-
-     
 	    include("include/class.figura.php");
 	    include("include/Interface.formulas.php");
 		include("figuras/class.cuadrado.php");
@@ -35,28 +30,25 @@
 			//echo $figuraElegida;
 			if($figuraElegida=="cuadrado"){
 				$objCuadrado = new cuadrado();
-				$tipo=$objCuadrado->GetTipo();
-				$area=$objCuadrado->GetArea();
-				$perimetro=$objCuadrado->GetPerimetro();
+				$area=$objCuadrado->area();
+				$perimetro=$objCuadrado->perimetro();
 			}else if($figuraElegida=="rectangulo"){
 			    $objRectangulo = new rectangulo();
-				$tipo=$objRectangulo->GetTipo();
-				$area=$objRectangulo->GetArea();
-				$perimetro=$objRectangulo->GetPerimetro();
+				$area=$objRectangulo->area();
+				$perimetro=$objRectangulo->perimetro();
 			}else if($figuraElegida=="triangulo"){
 				$objTriangulo = new triangulo();
-				$tipo=$objTriangulo->GetTipo();
-				$area=$objTriangulo->GetArea();
-				$perimetro=$objTriangulo->GetPerimetro();
+				$area=$objTriangulo->area();
+				$perimetro=$objTriangulo->perimetro();
 			}
 
 			//Impresion de area y perimetro
 
-			echo '<form class="form" name="figuras" method="post" action="procesa.php" >
+			echo '<form class="form" name="figuras"  >
 				<table align="center" class="table table-warning table-striped">
 					<tr>
 						<td>Tipo de figura:</td>
-						<td><p name="tipo" > '. $tipo . '</p></td>
+						<td><p name="tipo" > '. $figuraElegida . '</p></td>
 					</tr>
 					<tr>
 						<td>Área:</td>
@@ -65,6 +57,9 @@
 					<tr>
 						<td>Perímetro:</td>
 						<td><p name="area" > '. $perimetro . '</p></td>
+					</tr>
+					<tr class="text-center">
+						<th colspan="2"><input type="submit" name="limpiar" value="Limpiar" class="btn btn-outline-warning"></th>
 					</tr>
 				</table>
 				</form>';

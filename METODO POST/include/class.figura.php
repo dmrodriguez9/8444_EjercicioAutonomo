@@ -9,17 +9,14 @@
 		private $perimetro; //perimetro
 
 
-		//Constructores
-
-		/*function __construct($tipo) {
-			$this->tipo=$tipo;
-		}*/
-
-
 		//Metodos
 
 		public static function get_form(){
 			$html = '
+			<br><h2 class="text-center">Universidad de las Fuerzas Armadas - ESPE</h2>
+			<br><h2 class="text-center">Aplicación de Tecnologías Web</h2><br>
+			<h4 class="text-center">Nombre: Rodríguez Danny</h4>
+			<hr>
 			<form class="form" name="figuras" method="post" action="" >
 			<table align="center" class="table table-warning table-striped">
 				<tr>
@@ -47,6 +44,10 @@
 				<tr>
 					<td>Lado 3:</td>
 					<td><input type="text" id="lado_3" name="lado_3"size="4" disabled class="form-control"></td>
+				</tr>
+				<tr>
+					<td>Altura:</td>
+					<td><input type="text" id="altura" name="altura"size="4" disabled class="form-control"></td>
 				</tr>
 								
 					<tr class="text-center">

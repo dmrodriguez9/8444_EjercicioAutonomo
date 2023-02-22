@@ -17,6 +17,12 @@ if(isset($_POST["lado_2"])){
     $lado_3=$_POST["lado_3"];
  }
 
+ 
+ if(isset($_POST["altura"])){
+    $lado_3=$_POST["altura"];
+ }
+
+
 
 class triangulo extends figura implements formulas{
 
@@ -25,10 +31,9 @@ class triangulo extends figura implements formulas{
  
      public function GetArea(){
         $lado_1=$_POST["lado_1"];
-        $lado_2=$_POST["lado_2"];
+        $altura=$_POST["altura"];
         $base=$lado_1;
-        $altura=$lado_2;
-         return ($base*$altura)/2;      
+        return ($base*$altura)/2;      
      }
  
      public function GetPerimetro(){
@@ -48,18 +53,11 @@ class triangulo extends figura implements formulas{
      //Interface
  
      public function area(){
-         $lado_1=$_POST["lado_1"];
-         $lado_2=$_POST["lado_2"];
-         $base=$lado_1;
-         $altura=$lado_2;
-         return ($base*$altura)/2;
+        return $this->GetArea();  
  
      }
      public function perimetro(){
-         $lado_1=$_POST["lado_1"];
-         $lado_2=$_POST["lado_2"];
-         $lado_3=$_POST["lado_3"];
-         return $lado_1+$lado_2+$lado_3;
+         return $this->GetPerimetro();
      }
  
 	

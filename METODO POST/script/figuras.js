@@ -21,15 +21,18 @@ function figuraSeleccionada(){
     if(figura.value=="cuadrado"){
        document.getElementById("lado_1").disabled=false;
        document.getElementById("lado_2").disabled=true;
-        document.getElementById("lado_3").disabled=true;
+       document.getElementById("lado_3").disabled=true;
+       document.getElementById("altura").disabled=true;
     }else if(figura.value=="rectangulo"){
         document.getElementById("lado_1").disabled=false;
         document.getElementById("lado_2").disabled=false;
         document.getElementById("lado_3").disabled=true;
+        document.getElementById("altura").disabled=true;
     }else{
         document.getElementById("lado_1").disabled=false;
         document.getElementById("lado_2").disabled=false;
         document.getElementById("lado_3").disabled=false;
+        document.getElementById("altura").disabled=false;
     }
 
     
