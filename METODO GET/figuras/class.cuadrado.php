@@ -29,13 +29,11 @@ class cuadrado extends figura implements formulas {
     //Interface
 
     public function area(){
-        $lado_1=$_GET["lado_1"];
-        return $lado_1*$lado_1;  
+        return $this->GetArea();  
 
     }
 	public function perimetro(){
-        $lado_1=$_GET["lado_1"];
-        return 4*$lado_1;
+        return $this->GetPerimetro();
     }
 
 

@@ -35,28 +35,25 @@
 			//echo $figuraElegida;
 			if($figuraElegida=="cuadrado"){
 				$objCuadrado = new cuadrado();
-				$tipo=$objCuadrado->GetTipo();
-				$area=$objCuadrado->GetArea();
-				$perimetro=$objCuadrado->GetPerimetro();
+				$area=$objCuadrado->area();
+				$perimetro=$objCuadrado->perimetro();
 			}else if($figuraElegida=="rectangulo"){
 			    $objRectangulo = new rectangulo();
-				$tipo=$objRectangulo->GetTipo();
-				$area=$objRectangulo->GetArea();
-				$perimetro=$objRectangulo->GetPerimetro();
+				$area=$objRectangulo->area();
+				$perimetro=$objRectangulo->perimetro();
+				
 			}else if($figuraElegida=="triangulo"){
 				$objTriangulo = new triangulo();
-				$tipo=$objTriangulo->GetTipo();
-				$area=$objTriangulo->GetArea();
-				$perimetro=$objTriangulo->GetPerimetro();
+				$area=$objTriangulo->area();
+				$perimetro=$objTriangulo->perimetro();
+				
 			}
 			
-            
-			
-				echo '<form class="form" name="figuras" method="post" action="procesa.php" >
+				echo '<form class="form" name="figuras" >
 				<table align="center" class="table table-warning table-striped">
 					<tr>
 						<td>Tipo de figura:</td>
-						<td><p name="tipo" > '. $tipo . '</p></td>
+						<td><p name="tipo" > '. $figuraElegida . '</p></td>
 					</tr>
 					<tr>
 						<td>Área:</td>
@@ -69,27 +66,25 @@
 				</table>
 				</form>';
 			
-
-			
+               
 			/*echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
 			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
 			echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';
 			<input type="text" id="lado_2" name="perimetro" disabled class="form-control" '. $perimetro .' >*/
 			
-			
 
 		}
 		
 	
-		
 		if(isset($_GET["tipo"])){
 			$opcion=$_GET["tipo"];
 			$p=urlencode(serialize($_GET));
 			 //var_dump($p);
 			header("location:post_get.php?post=$p&d=$opcion");
-			echo show_data($_GET);
 	
 		}
+	
+		
 					
 					
 	?>

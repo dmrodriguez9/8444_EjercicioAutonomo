@@ -46,17 +46,11 @@ class triangulo extends figura implements formulas{
      //Interface
  
      public function area(){
-      $lado_1=$_GET["lado_1"];
-      $altura=$_GET["altura"];
-      $base=$lado_1;
-      return ($base*$altura)/2;      
- 
+      return $this->GetArea();      
      }
+
      public function perimetro(){
-         $lado_1=$_GET["lado_1"];
-         $lado_2=$_GET["lado_2"];
-         $lado_3=$_GET["lado_3"];
-         return $lado_1+$lado_2+$lado_3;
+         return $this->GetPerimetro();
      }
  
 	
