@@ -14,7 +14,7 @@
 		public static function get_form(){
 			$html = '
 			<br><h2 class="text-center">Universidad de las Fuerzas Armadas - ESPE</h2>
-			<br><h2 class="text-center">Aplicación de Tecnologías de Web</h2><br>
+			<br><h2 class="text-center">Aplicación de Tecnologías Web</h2><br>
 			<h4 class="text-center">Nombre: Rodríguez Danny</h4>
 			<hr>
 			<form class="form" name="figuras" method="get" action="index.php" >
