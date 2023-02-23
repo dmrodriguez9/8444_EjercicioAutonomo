@@ -58,11 +58,11 @@
 					</tr>
 					<tr>
 						<td>Área:</td>
-						<td><label for="Name" name="area"> ' . $area . '</label></td>
+						<td><p name="area" > '. $perimetro . '</p></td>
 					</tr>
 					<tr>
 						<td>Perímetro:</td>
-						<td><input type="text" id="lado_2" name="perimetro" readOnly class="form-control" value="2" ></td>
+						<td><p name="perimetro">' . $area . '</p></td>
 						</tr></td>
 					</tr>
 				</table>
@@ -74,6 +74,7 @@
 			/*echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
 			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
 			echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';
+			echo '<label for="Name" name="area"> ' . $area . '</label>'
 			<input type="text" id="lado_2" name="perimetro" readOnly class="form-control" '. $perimetro .' >*/
 			
 
