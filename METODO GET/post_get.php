@@ -1,6 +1,5 @@
 
 <?php 
-
 //*******************************************************************
 function show_data($post){
 
@@ -19,7 +18,7 @@ function show_data($post){
 
      
 	$html = '
-	<form class="form" >
+	<form class="form" method="get" action="index.php">
 	<table align="center" class="table table-warning table-striped">
 		<tr>
 			<th colspan="2" class="text-center">Figuras geométricas</th>
@@ -104,6 +103,18 @@ echo "</pre>";
 <!--<form action="post_get.php" method="post">
     <p name="traerPerimetro" value="<?php echo $perimetro?>"></p>
 </form>-->
+
+
+<!--<tr>
+		<td>Area: </td>
+		<td>' . (isset($post['area']) ? $post['area'] : '') . '</td>
+    </tr>
+	<tr>
+		<td>Perimetro: </td>
+		<td>' . (isset($post['perimetro']) ? $post['perimetro'] : '') . '</td>
+    </tr>-->
+
+
 
 <!--BOOSTRAP-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">

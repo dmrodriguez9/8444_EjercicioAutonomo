@@ -49,7 +49,8 @@
 				
 			}
 			
-				echo '<form class="form" name="figuras" >
+          
+				echo '<form class="form" name="figuras" method="post" action="post_get.php">
 				<table align="center" class="table table-warning table-striped">
 					<tr>
 						<td>Tipo de figura:</td>
@@ -57,20 +58,23 @@
 					</tr>
 					<tr>
 						<td>Área:</td>
-						<td><p name="area" > '. $area . '</p></td>
+						<td><label for="Name" name="area"> ' . $area . '</label></td>
 					</tr>
 					<tr>
 						<td>Perímetro:</td>
-						<td><p name="area" > '. $perimetro . '</p></td>
+						<td><input type="text" id="lado_2" name="perimetro" readOnly class="form-control" value="2" ></td>
+						</tr></td>
 					</tr>
 				</table>
 				</form>';
 			
+
+		
                
 			/*echo '<p class="text-center">Tipo de figura: ' . $tipo . '</p>';
 			echo '<p class="text-center">El área del ' . $figuraElegida . ' es: ' . $area .'</p>';
 			echo '<p class="text-center">El perímetro del ' . $figuraElegida . " es: " . $perimetro .'</p>';
-			<input type="text" id="lado_2" name="perimetro" disabled class="form-control" '. $perimetro .' >*/
+			<input type="text" id="lado_2" name="perimetro" readOnly class="form-control" '. $perimetro .' >*/
 			
 
 		}
